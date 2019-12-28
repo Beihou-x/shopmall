@@ -12,15 +12,14 @@ export function request(config) {
   instance.interceptors.request.use(config => {
     return config
   }, err => {
-
+    
   })
 
   // 响应拦截器
   instance.interceptors.response.use(res => {
     return res
   }, err => {
-    console.log(err);
-    
+    console.log(err); 
   })
 
   // 发送真正的网络请求

@@ -125,6 +125,8 @@ export default {
     // 网络请求
     getHomeMultidata() {
       getHomeMultidata().then(res => {
+        console.log(res);
+        
         this.banners = res.data.data.banner.list;
         this.recommends = res.data.data.recommend.list;
       });
